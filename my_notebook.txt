@@ -1,1 +1,1 @@
-GIT is a Version Control System (VCS) Application
+GIT is a Version Control System (VCS) Application.
