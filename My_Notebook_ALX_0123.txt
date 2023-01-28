@@ -1,1 +1,0 @@
-GIT is a Version Control System (VCS).
