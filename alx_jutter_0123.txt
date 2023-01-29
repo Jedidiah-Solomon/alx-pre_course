@@ -170,6 +170,7 @@ Ensure you always add before commiting
 
 
 
+
 git branch classroom_box                    //will create a branch called classroom_box
                                                                                                                      
 git checkout classroom_box              //will switch us from master to the branch 
@@ -190,4 +191,77 @@ git remote add origin https://github.com/Jedidiah-Solomon/practice_hub.git  //st
 git branch -M main                                                          //step 2
 git push -u origin main                                                     //step 3
 
-                                                                                                         
+
+
+
+git add "filename"                      //stages a file
+use 
+git rm --cached                         //to unstage
+ 
+
+
+git --version           //to check version.
+
+
+Note: Short status flags are:
+
+?? - Untracked files
+A - Files added to stage
+M - Modified files
+D - Deleted files
+
+Pulling to Keep up-to-date with Changes
+When working as a team on a project, it is important that everyone stays up to date.
+
+Any time you start working on a project, you should get the most recent changes to your local copy.
+
+With Git, you can do that with pull.
+
+pull is a combination of 2 different commands:
+
+fetch
+merge
+Let's take a closer look into how fetch, merge, and pull works.
+
+Git Fetch
+fetch gets all the change history of a tracked branch/repo.
+
+So, on your local Git, fetch updates to see what has changed on GitHub
+git fetch origin
+
+The result looks like:
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 749 bytes | 0 bytes/s, done.
+From https://github.com/Jedidiah-Solomon/practice_hub
+   bd661fc..72797ed  main       -> origin/main
+
+
+Now that we have the recent changes, we can check our status:
+
+Example
+git status
+
+The result is :
+
+We are behind the origin/master by 1 commit. That should be the updated README.md, but lets double check by viewing the log:
+
+Example
+git log origin/master
+
+That looks as expected, but we can also verify by showing the differences between our local master and origin/master:
+
+Example
+git diff origin/master
+
+That looks precisely as expected! Now we can safely merge.
+
+Git Merge
+merge combines the current branch, with a specified branch.
+
+We have confirmed that the updates are as expected, and we can merge our current branch (master) with origin/master:
+
+Example
+git merge origin/master
