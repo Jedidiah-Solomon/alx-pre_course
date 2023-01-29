@@ -180,4 +180,14 @@ git merge classroom_box  ///For merging this branch and main but pls use checkou
 this.
 
  git branch -d classroom_box                //will delete the branch classroom_box      but pls use checkout to switch to main before doing this.
+ Create your github account, the copy the url and do
+ $ git remote add origin https://github.com/Jedidiah-Solomon/practice_hub.git/              //step 1
+ $ git push --set-upstream origin master                                                    /step 2
+
+ or
+
+git remote add origin https://github.com/Jedidiah-Solomon/practice_hub.git  //step1
+git branch -M main                                                          //step 2
+git push -u origin main                                                     //step 3
+
                                                                                                          
