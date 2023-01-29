@@ -1,0 +1,141 @@
+GIT is a Version Control System (VCS).
+
+Uses of GITHUB
+*Creating a repository
+*Forking a repository
+*Managing files
+*Being social
+
+
+
+How to add images , table to a readme.md
+*# JedybrownFolio
+ My website.
+
+<img alt="My pics" src="https://user-images.githubusercontent.com/121108148/215294524-739aad63-9d80-4d8f-8273-c0d633853d5e.jpg" width="200" height="200">
+ This link was gotten from github issue by dragging pc image into description box.                                                                                                   
+
+
+<details>
+    <summary> My Top Languages </summary>
+
+    |   RANK          |Specializations
+    |----------------:|---------------|
+    |     1           |  HTML         |
+    |     2           |  CSS          |
+    |     3           |  JAVASCRIPT   |
+    |     4           |  PHP          |
+
+</details>
+
+
+
+
+
+GIT COMMANDS
+$ git clone <repo>
+//
+
+
+
+
+$ touch test
+$ git add test
+$ git commit -m "Initial commit"
+$ git push origin main
+
+
+some COMMANDS
+1. cd
+2. ls
+3. mkdir
+4. rmdir 
+Just like Sandbox
+5. Create a folder with mkdir e.g "my_class" and use cd to go to the content 
+of the directory, then use 
+git init
+this will create a GIT Repository inside this directory
+to get this message
+Initialized empty Git repository in C:/Users/JEDYBROWN/Desktop/my_class/.git/
+
+Using the terminal we navigated to the folder location and invoked the
+magic words, git init, where init is short for initialize. Git realizes we
+are asking it to create a repository at this location, and it responds by
+creating a hidden folder called .git, and stuffs it with some configuration
+files, and a subfolder where it will store our snapshots when we ask it to.
+One way to confirm this happened is by listing all the files using our
+terminal, like so.
+This hidden folder represents the Git repository. It’s job is to store
+everything related to your project, including all commits, the project
+history, configuration files, what-have-you. It also stores any specific Git
+configuration and settings that might have enabled for this particular
+project.
+output: JEDYBROWN@DESKTOP-EP9RSDS MINGW64 ~/Desktop/my_class (master)
+$ ls -a
+./  ../  .git/
+
+
+so,
+git config --global user.name "Jedidiah Solomon"
+will write your usernam globally
+git config --global user.email "onwubikojedidiah@gmail.com"
+will write your mail
+
+create a file Checklist.md inside my_class folder
+Save the file as Checklist.md in the my_class directory.
+Now we are ready to commit our work. This involves two Git commands,
+namely:
+git add and git commit.
+$ git add checklist.md will add the file to GIT
+
+
+$ git commit -m "Jedy first commit" 
+will commit this file to git and you will see this below:
+[master (root-commit) 7150e6a] Jedy first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 checklist.md
+
+ We saw that committing to Git is a two-step process. You first add the files
+and then commit.
+The first thing to know is that only the files that you add are committed.
+Let’s say you had two files—Checklist.md and README.md, but you only
+added Checklist.md.  When you create a commit, Git will only store the
+changes made to Checklist.md.
+Now, when we commit, Git uses a specialized algorithm to safely tuck
+away everything that we added in it’s memory. When we say we
+“committed” our changes to Git, what that translates into is that Git creates
+a commit object that it stores inside the .git folder. This commit object is
+‘stamped’ by a unique identifier. You might recall that we got 3dc1ea2 when
+we made our commit in our last exercise (you certainly saw something
+different)—this is actually a much longer string containing numbers and
+letters that looks something like this.
+
+GIT command has 3 parts:
+1. command e.g git
+2. sub-command e.g add 
+3. argument e.g "checklist"
+
+Note the commands are in small letters.
+* git commit takes 2 messages
+1. a flag e.g -m
+2. message e.g "First commit by me"
+When we add a new file to a Git repository, Git sees the file, but also
+chooses not to do anything till we explicitly tell it to. A file that Git has
+never seen before (that is, a file that has never been added to the index) is
+marked as “Untracked”. Adding the file to the index is our way of telling Git
+“Hey! We really like you to keep an eye on this file for us”. Any file that Git
+is watching for us is referred to as a “tracked” file.
+
+
+
+
+git status 
+tells you the status of commit as it stands
+
+Once you install Git, you need to tell Git your full name, and
+your email address. Git will use this whenever you use Git to
+
+
+                                                                          
+                                                                                                                     
+                                                                                                                     
