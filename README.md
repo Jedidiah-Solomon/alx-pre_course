@@ -1,5 +1,5 @@
 # alx_pre_course
- Alx Software Engineering Project 2023.
+ Alx Software Engineering Project 2023. <b>This repository is for my projects.</b>
 <br>
 <img alt="My pics" src="https://user-images.githubusercontent.com/121108148/215294524-739aad63-9d80-4d8f-8273-c0d633853d5e.jpg" width="200" height="200">
                                                                                                     
