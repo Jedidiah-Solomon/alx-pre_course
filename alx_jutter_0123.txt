@@ -137,7 +137,7 @@ your email address. Git will use this whenever you use Git to
 
 
 How to undo a Git commit
-First, decide how far back to go into the version history. To view the previous commits, use the git log –-oneline command. This provides the commit details.
+First, decide how far back to go into the version history. To view the previous commits, use the git log  command. This provides the commit details.
 
 Once the IT team chooses a code version to which their tree should revert, use the commit ID to execute the command. In the following example, x12345 represents the commit ID, gained from the git log output:
 
@@ -146,6 +146,25 @@ git reset x12345
 Alternatively, there is a shorthand method to roll back the commit: To revert commits without knowing the necessary commit ID, admins can use the command below to revert code versions relative to where the current head is. In the example, ~1 refers to the number of commits backward to which the code tree will revert. Figure 1 illustrates the results for adding several commits and then reverting back one version.
 
 git reset head~1
+
+
+
+git add README.md                       //for a single file
+git add -all                            // for multiple files or use shorthand 
+git add -A
+git add *.txt                           // to add all .txt files
+git commit -m "Write your message"
+git commit -a               // this is to amend a code you have added and commited the first time.
+git help
+git command -help           or          // for help
+git help --all
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+if using Sublime text, when to write commit message, clean all messages and type your commit message.
+Ensure you always add before commiting
                                                                           
                                                                                                                      
                                                                                                                      
