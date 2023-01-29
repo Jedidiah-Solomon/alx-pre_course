@@ -150,7 +150,7 @@ git reset head~1
 
 
 git add README.md                       //for a single file
-git add -all                            // for multiple files or use shorthand 
+git add --all                            // for multiple files or use shorthand 
 git add -A
 git add *.txt                           // to add all .txt files
 git commit -m "Write your message"
@@ -165,6 +165,19 @@ See 'git help git' for an overview of the system.
 
 if using Sublime text, when to write commit message, clean all messages and type your commit message.
 Ensure you always add before commiting
-                                                                          
+                                        
+
+
+
+
+git branch classroom_box                    //will create a branch called classroom_box
                                                                                                                      
-                                                                                                                     
+git checkout classroom_box              //will switch us from master to the branch 
+git checkout -b                 //will create another branch under this new branch
+
+
+git merge classroom_box  ///For merging this branch and main but pls use checkout to switch to main before doing
+this.
+
+ git branch -d classroom_box                //will delete the branch classroom_box      but pls use checkout to switch to main before doing this.
+                                                                                                         
